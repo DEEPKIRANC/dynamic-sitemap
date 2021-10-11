@@ -25,7 +25,6 @@ const userManagementLink=document.querySelector("#user-management");
 
 // updating link URLs
 
-//console.log(updatedDashboardURL);
 
 const setURL=(link,updatedLink)=>{
 

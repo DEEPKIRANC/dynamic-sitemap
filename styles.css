@@ -52,21 +52,17 @@ a
     padding:20px;
     background-color:#fff;
 }
-.page-contents > h3
+.page-contents > h2
 {
     font-size: 18px;
-    font-weight:550;
+    font-weight:600;
 }
 .page-contents > ul
 {
     margin-left:40px;
     margin-top:15px;
 }
-.page-contents > ul > li
-{
-    text-decoration: underline;
-   
-}
+
 .page-contents > ul > li:not(:last-child)
 {
     margin-bottom: 10px;
@@ -74,7 +70,8 @@ a
 .page-contents a
 {
     color:var(--primary-link-color);
-    transition: all 0.3s ease-out       ;
+    transition: all 0.3s ease-out   ;
+    text-decoration: underline;    ;
     
 }
 .page-contents a:hover
