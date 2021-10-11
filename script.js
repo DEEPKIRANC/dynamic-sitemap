@@ -21,3 +21,35 @@ const proactiveUploadLink=document.querySelector("#proactive-uploads");
 const taxDocumentsLink=document.querySelector("#tax-documents");
 const messageUiTeamLink=document.querySelector("#message-ui-team");
 const userManagementLink=document.querySelector("#user-management");
+
+
+// updating link URLs
+
+//console.log(updatedDashboardURL);
+
+const setURL=(link,updatedLink)=>{
+
+    link.setAttribute("href",baseURL+updatedLink);
+}
+
+
+setURL(dashboardLink,'dashboard');
+setURL(claimActivityLink,'claim-status?subMenu=customer-attention-claims');
+setURL(customerAttentionLink,'claim-status?subMenu=customer-attention-claims');
+setURL(agentAttentionLink,'claim-status?subMenu=agent-attention-claims');
+setURL(completedRecentlyLink,'claim-status?subMenu=recent-claims');
+setURL(recentDecisionsLink,'claim-status?subMenu=recent-claim-decisions');
+setURL(appellateActivityLink,'claim-status?subMenu=appellate-work-in-progress');
+setURL(workInProgressLink,'claim-status?subMenu=appellate-work-in-progress');
+setURL(recentDecisionsAALink,'claim-status?subMenu=recent-appellate-decisions');
+
+setURL(recentHearingsLink,'claim-status?subMenu=recent-hearings');
+setURL(reportsLink,'reports-activity');
+setURL(activityLink,'reports-activity');
+setURL(trendLink,'reports-trend');
+
+setURL(chargeLink,'reports-charge');
+setURL(proactiveUploadLink,'proactive-upload');
+setURL(taxDocumentsLink,'tax-documents');
+setURL(messageUiTeamLink,'message-cs');
+setURL(userManagementLink,'User-Management');
